@@ -30,7 +30,11 @@ pipeline
         }
         
         
-        
+        stage('Staging'){
+            steps{
+                echo "This is the fifth stage"
+            }
+            }
         
         stage('Production'){
             steps{
