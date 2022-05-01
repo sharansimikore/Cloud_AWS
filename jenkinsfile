@@ -15,13 +15,7 @@ pipeline
             }
         }
         
-        
-        stage('Deploy'){
-            steps{
-                echo "This is the third stage"
-            }
-        }
-        
+       
         
         stage('Testing'){
             steps{
