@@ -1,0 +1,32 @@
+pipeline
+{
+    agent any
+    stages{
+        stage('Git-pull'){
+            steps{
+                echo "This is the first stage"
+            }
+        }
+        
+    
+        stage('Build'){
+            steps{
+                echo "This is the second stage"
+            }
+        }
+        
+        
+        stage('Deploy'){
+            steps{
+                echo "This is the third stage"
+            }
+        }
+        
+        
+        stage('Testing'){
+            steps{
+                echo "This is the fourth stage"
+            }
+        }
+    }
+}
